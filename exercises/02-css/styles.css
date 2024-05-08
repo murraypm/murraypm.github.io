@@ -1,14 +1,63 @@
 /* Structure */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: skyblue;
+:root {
+    --primary-color: purple;
+    --secondary-color: white;
+    --background-color: black;
 }
 
-div {
-    background: yellow;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F2D7B6;
+    background: url("images/books.png");
+    background-size: 100%;
+    margin: auto;
+}
+
+#content {
+    background: #F2F2F2;
     width: 70%;
     margin: auto;
+    padding-bottom: 5px;
+}
+
+#main-header {
+    background: white;
+}
+
+/* Navigation */
+#main-nav li {
+    list-style-type: none;
+    display: inline-block;
+    background: #F2B680;
+    padding: 10px;
+}
+
+#main-nav ul {
+    padding: 0;
+}
+
+#main-nav a {
+    color: #BF6A1F;
+    text-decoration: none;
+}
+
+#main-nav a.hover {
+    color: white;
+}
+
+/* Tables */
+#about-table {
+    border-collapse: collapse;
+}
+
+#about-table th, #about-table td {
+    border: 2px solid black;
     padding: 5px;
+}
+
+#about-table th {
+    background-color: purple;
+    color: white;
 }
 
 /* Images */
@@ -18,17 +67,11 @@ img {
 
 /* Typography */
 h1 {
-    color: magenta;
+    color: #A65729;
 }
 
 h2 {
-    color: orange;
-}
-
-strong {
-    background: yellow;
-    padding: 5px;
-    text-decoration-line: underline;
+    color: #A65729;
 }
 
 /* Larger Resolutions */
