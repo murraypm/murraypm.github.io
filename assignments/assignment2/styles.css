@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #f8f7ff;
+    --secondary-color: #b8b8ff;
+    --background-color: #9381ff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+    background-image: url("https://i.insider.com/648b37ae1cc64b001ae14db6?width=700")
+}
+
+#content {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--background-color);
+}
+
+#content a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#main-nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--secondary-color);
+}
+
+#main-nav li:hover {
+    background-color: black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+}
+
+table th, table td {
+    border: 2px solid black;
+    padding: 3px;
+    background-color: lightgray;
+    color: black;
+}
+
+#content img {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
