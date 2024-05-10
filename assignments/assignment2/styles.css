@@ -51,4 +51,6 @@ table th, table td {
     height: 50%;
     width: 50%;
     object-fit: cover;
+    border: 2px solid black;
+    margin: 3px;
 }
