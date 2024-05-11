@@ -7,24 +7,39 @@
         <title>Home Page</title>
     </head>
     <body>
-        <div id="content">
-            <h1>
-                CSCE 242
-            </h1>
-            <h2>
-                Murray McDaniel
-            </h2>
-            <p>
-                We make web applications in this class!
-            </p>
-            <h2>
-                Assignments
-            </h2>
-            <ol>
-                <li><a href="assignments/assignment1/index.html">Assignment 1</a></li>
-                <li><a href="assignments/assignment2/index.html">Assignment 2</a></li>
-                <li><a href="assignments/assignment3/index.html">Assignment 3</a></li>
-            </ol>
-        </div>
+        <header>
+            <h1>CSCE 242: <br id="line-break">Web Applications</h1>
+            <p id="name">Murray McDaniel</p>
+        </header>
+        <main>
+            <h1>Assignments</h1>
+
+            <section id="cards">
+                <article>
+                    <h2><a href="assignments/assignment1/index.html">Assignment 1 - Basic HTML</a></h2>
+                    <img src="images/assignment1.png" alt="Card image">
+                    <p>
+                        A webpage about the Pokemon TCG Indianopolis regional created to demonstrate basic HTML features.
+                    </p>
+                </article>
+                <article>
+                    <h2><a href="assignments/assignment2/index.html">Assignment 2 - Basic CSS</a></h2>
+                    <img src="images/assignment2.png" alt="Card image">
+                    <p>
+                        A webpage about the McDonald's character Grimace created to demonstrate basic CSS features.
+                    </p>
+                </article>
+                <article>
+                    <h2><a href="assignments/assignment3/index.html">Assignment 3 - Page Layout</a></h2>
+                    <img src="images/assignment3.png" alt="Card image">
+                    <p>
+                        A webpage recreating a given design using flex box to demonstrate flex box's usage with CSS.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            &copy; Murray McDaniel
+        </footer>
     </body>
 </html>
