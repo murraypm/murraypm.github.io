@@ -30,7 +30,7 @@ main h1 {
 }
 
 /* Cards */
-#cards article {
+#assignment-cards article, #project-cards article {
     background-color: var(--card-color);
     text-align: center;
     padding: 5px;
@@ -38,18 +38,18 @@ main h1 {
     margin-bottom: 10px;
 }
 
-#cards p {
+#assignment-cards p, #project-cards p {
     text-align: left;
     padding-left: 15px;
 }
 
-#cards a {
+#assignment-cards a, #project-cards a {
     text-decoration: none;
     color: var(--text-color);
     
 }
 
-#cards img {
+#assignment-cards img, #project-cards img {
     width: 300px;
     height: 150px;
     object-fit: cover;
@@ -78,17 +78,17 @@ footer {
     }
 
     /* Cards */
-    #cards {
+    #assignment-cards, #project-cards {
         display: flex;
         flex-wrap: wrap;
     }
 
-    #cards article {
+    #assignment-cards article, #project-cards article {
         flex: 25%;
         margin: 10px;
     }
 
-    #cards p {
+    #assignment-cards p, #project-cards p {
         padding-left: 20px;
     }
 }
