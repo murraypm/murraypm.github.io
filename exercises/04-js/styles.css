@@ -1,0 +1,186 @@
+:root {
+    --primary-color: green;
+    --secondary-color: lightgreen;
+    --background-color: teal;
+    --header-background: lightgray;
+}
+
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+#content {
+    background: white;
+    width: 80%;
+    margin: auto;
+}
+
+#main-header {
+
+}
+
+#main-content {
+    padding: 5px;
+}
+
+#main-footer {
+
+}
+
+#main-header, #main-footer {
+    background-color: var(--header-background);
+    padding: 5px;
+}
+
+#main-sidebar {
+    background-color: cyan;
+    padding: 5px;
+}
+
+#information {
+    background-color: magenta;
+    padding: 5px;
+}
+
+#information section {
+    background-color: slategray;
+    margin: 5px;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#main-nav li {
+    background-color: darkseagreen;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+#main-nav li:hover {
+    background-color: lightseagreen;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+}
+
+/* Login Nav */
+#main-header {
+    position: relative;
+}
+
+#login-nav {
+    background-color: red;
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#login-nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#login-nav li {
+    padding: 5px;
+}
+
+/* Typography */
+#information h3 {
+    text-align: center;
+}
+
+.style-button {
+    background-color: green;
+}
+
+#bow {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 75px;
+}
+
+.rainbow {
+    animation-name: colorAnim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes colorAnim {
+    0% {
+        background-color: red;
+        top: 0px;
+        left: 0px;
+    }
+    15% {
+        background-color: orange;
+        top: 20px;
+        left: 20px;
+    }
+    30% {
+        background-color: yellow;
+        top: 40px;
+        left: 40px;
+    }
+    45% {
+        background-color: green;
+        top: 50px;
+        left: 50px;
+    }
+    60% {
+        background-color: blue;
+        top: 40px;
+        left: 40px;
+    }
+    75% {
+        background-color: indigo;
+        top: 20px;
+        left: 20px;
+    }
+    90% {
+        background-color: violet;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+/* Media Query */
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    #information section {
+        flex: 25%;
+    }
+}
