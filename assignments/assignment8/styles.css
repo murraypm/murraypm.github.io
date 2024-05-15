@@ -1,0 +1,95 @@
+:root {
+    --text-color: #f1f7ed;
+    --card-color: #243e36;
+    --background-color: #7ca982; 
+}
+
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+/* Navigation */
+#nav ul {
+    list-style: none;
+    padding-left: 0px;
+    text-align: left;
+}
+
+#arrows {
+    font-size: 1.5rem;
+}
+
+#nav li, #arrows {
+    width: fit-content;
+}
+
+#nav li:hover, #arrows:hover {
+    cursor: pointer;
+}
+
+/* Cards */
+#exercises article {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* Card 1 */
+#exercise-1 {
+    background-color: black;
+}
+
+#txt-color {
+    color: white;
+}
+
+#slider {
+    width: 100%;
+}
+
+/* Card 2 */
+#exercise-2 {
+    background-color: var(--card-color);
+    align-content: center;
+}
+
+#img-var {
+    display: block;
+    margin: 10px auto 0px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #arrows {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav ul {
+        text-align: center;
+    }
+
+    #nav li {
+        display: inline-block;
+    }
+
+    #nav-one::after {
+        content: "\00A0\007C\00A0";
+    }
+
+    #exercises article {
+        width: 40%;
+    }
+}
