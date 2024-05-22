@@ -1,0 +1,60 @@
+:root {
+    --background-color: lightgray;
+    --text-color: white;
+    --card-color: gray;
+}
+
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Cards */
+#cards section {
+    background-color: var(--card-color);
+    margin: 1rem;
+    flex: 20%;
+}
+
+#cards img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin: auto;
+    display: inline-block;
+}
+
+/* Modal Details */
+#dialog-content {
+    color: black;
+}
+
+#dialog-content section {
+    flex: 30%;
+    align-content: center;
+}
+
+#dialog-content img{
+    flex: 10%;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    display: inline-block;
+    margin: 1rem;
+}
+
+#dialog-x {
+    color: black;
+}
+
+a {
+    color: var(--text-color);
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+}
